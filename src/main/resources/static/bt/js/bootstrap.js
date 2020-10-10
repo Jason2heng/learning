@@ -40,7 +40,7 @@ if (typeof jQuery === 'undefined') {
       OTransition      : 'oTransitionEnd otransitionend',
       transition       : 'transitionend'
     }
-
+//hhahaha
     for (var name in transEndEventNames) {
       if (el.style[name] !== undefined) {
         return { end: transEndEventNames[name] }
