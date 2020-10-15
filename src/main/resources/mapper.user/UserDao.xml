@@ -6,16 +6,13 @@
     <select id="getAll" resultType="user.dao.UserDao" parameterType="java.util.Map">
 
         SELECT * FROM user
-
-    </select>
-
     <delete id="delById" parameterType="java.lang.Integer">
 
         delete from user where id = ${id}
 
     </delete>
 
-    <insert id="save" parameterType="user.dao.UserDao">
+    <insert id="save" parameterType="java.util.Map">
 
         INSERT INTO `jiaochengdemo`.`user` (
             `id`,
@@ -38,3 +35,9 @@
     </insert>
 
 </mapper>
+
+
+
+
+
+

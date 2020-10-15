@@ -10,8 +10,12 @@ import java.util.Map;
 @Mapper
 public interface UserDao {
     List<UserEntity> getAll(@Param("content") Map map);
-    //lalalala
-    
+    //lala
+    void delById(Integer id);
+
+    public void save(UserEntity userEntity);
+
+
 
 
 
